@@ -1,0 +1,147 @@
+.footer {
+  background-image: url(/image/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% - -700px) -150px;
+  background-color: #1B262F;
+}
+
+.footer__div {
+  padding: 31px 0px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin: 0;
+}
+
+.footer__logo-img {
+  width: 135px;
+  height: 38px;
+}
+
+.footer__list {
+  @include list;
+  margin-left: -400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 232px;
+  width: 100%;
+}
+
+.footer__item {
+  margin: 0;
+}
+
+.footer__link {
+    @include link-style;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.footer__link:active {
+  opacity: 0.5;
+}
+
+.footer__icon-list {
+  @include list;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120px;
+  width: 100%;
+}
+
+.footer__icon-item {
+
+}
+
+.footer__icon-link {
+
+}
+
+.footer__icon path{
+  transition: 0.3s;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.footer__icon:hover path {
+  fill: #DA6D97;
+}
+
+.footer__icon:active path {
+  fill: #da6d977e;
+}
+
+#tr-popup {
+  display: none;
+}
+
+.tr-popup {
+  display: none;
+}
+
+
+
+@media only screen and (max-width:980px) {
+  .footer__list {
+    margin-left: 0px;
+  }
+
+  .footer {
+    background-position: calc(50% - -500px) -150px;
+
+  }
+}
+
+
+@media only screen and (max-width:600px) {
+  .footer {
+    background-size: 900px;
+    background-position: calc(50% - -10px) 180px;
+
+  }
+
+  .footer__div {
+    flex-direction: column;
+  }
+
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__item {
+    margin-bottom: 40px;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__icon-list {
+    max-width: 150px;
+  }
+} 
+

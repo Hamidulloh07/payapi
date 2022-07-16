@@ -1,0 +1,155 @@
+.inner {
+  background-color: #1B262F;
+
+}
+
+.inner__div {
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inner__title-div {
+  max-width: 445px;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.inner__heading {
+  @include title;
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE;
+}
+
+.inner__text {
+  @include text;
+  margin-bottom: 32px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.inner__button {
+  @include button;
+  transition: 0.3s;
+  display: inline-block;
+  background-color: rgba(255, 0, 0, 0);
+  border: none;
+  box-shadow: none;
+  border: 1px solid #FBFCFE;
+
+}
+
+.inner__button:hover {
+  background: #FFFFFF;
+  border: 1px solid #FBFCFE;
+  color: #1B262F;
+}
+
+.inner__button:active {
+  border: 1px solid #fbfcfe88;
+  color: #fbfcfe86;
+  background-color: rgba(255, 0, 0, 0)
+}
+
+.inner__list {
+  @include list;
+  max-width: 536px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.inner__item {
+  margin-top: 35px;
+}
+
+.inner__link {
+
+}
+
+.inner__img {
+  width: 145px;
+
+  height: 30px;
+}
+
+@media only screen and (max-width:1000px) {
+  .inner__list {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .inner__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width:830px) {
+  .inner__div {
+    flex-direction: column-reverse;
+  }
+
+  .inner__list {
+    max-width: 536px;
+  }
+
+  .inner__title-div {
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width:530px) {
+  .inner__list {
+    justify-content: space-between;
+    max-width: 360px;
+  }
+
+}
+
+@media only screen and (max-width:425px) {
+  .inner__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .inner__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .inner__title-div {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width:374px) {
+  .inner__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .inner__div {
+    padding-top: 30px;
+  }
+
+  .inner__item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}

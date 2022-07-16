@@ -1,0 +1,63 @@
+body {
+  background-color:  #EDF3F8;
+  background-image:  url(/image/hero-bg-img.png);
+  background-size: 780px 780px;
+  background-repeat: no-repeat;
+  background-position: calc(50% - -500px) calc(50% - 1290px)  ;
+
+}
+
+
+
+
+  @media only screen and (max-width:950px) {
+    body {
+      background-size: 1200px 1300px;
+      background-position: calc(50% - -0px) calc(50% - 1900px)  ;
+    }
+  }
+@media only screen and (max-width:939px) {
+  body {
+    background-size: 1200px 1300px;
+    background-position: calc(50% - -0px) calc(50% - 2300px)  ;
+  }
+
+  
+  
+}
+
+  @media only screen and (max-width:938px) {
+    body {
+      background-size: 1200px 1300px;
+      background-position: calc(50% - -0px) calc(50% - 2100px)  ;
+    }
+  }  
+  @media only screen and (max-width:832px) {
+    body {
+      background-size: 1200px 2400px;
+      background-position: calc(50% - -0px) calc(50% - 2800px)  ;
+    }
+
+  }
+
+  @media only screen and (max-width:731px) {
+    body {
+      background-size: 1200px 1300px;
+      background-position: calc(50% - -0px) calc(10% - 200px)  ;
+    }
+
+  } 
+
+  @media only screen and (max-width:730px) {
+    body {
+      background-size: 1200px 1300px;
+      background-position: calc(50% - -0px) calc(50% - 2650px)  ;
+    }
+  }
+  @media only screen and (max-width:384px) {
+    body {
+      background-size: 1200px 1300px;
+      background-position: calc(50% - -0px) calc(50% - 2750px)  ;
+    }
+
+  }
